@@ -2,7 +2,7 @@
 channels = ["pytorch", "conda-forge"]
 description = "Add a short description here"
 name = "sam"
-platforms = ["osx-arm64"]
+platforms = ["osx-arm64", "linux-64"]
 version = "0.1.0"
 
 [tasks]
