@@ -17,7 +17,7 @@ jobs:
         with:
           # list of Docker images to use as base name for tags
           images: |
-            timjhudelmaier/pixi-vae-env
+            timjhudelmaier/pixi-micro-sam-th
           # generate Docker tags based on the following events/attributes
           tags: |
             type=sha

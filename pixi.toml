@@ -32,7 +32,7 @@ zarr = "<2.18.0"
 [pypi-dependencies]
 bioio = "==1.1.0"
 mobile-sam = { git = "https://github.com/ChaoningZhang/MobileSAM.git" }
-micro-sam = { path = "." }
+micro-sam = { git = "https://github.com/tim-hudelmaier/micro-sam.git" }
 bioio-ome-tiff = ">=1.0.1, <2"
 bioio-lif = "*"
 einops = ">=0.8.0, <0.9"
