@@ -40,6 +40,8 @@ einops = ">=0.8.0, <0.9"
 loguru = "*"
 fire = ">=0.7.0, <0.8"
 imagecodecs = "*"
+midi-app-controller = ">=0.1.1, <0.2"
+bioio-tifffile = ">=1.0.0, <2"
 
 [tool.pixi.dependencies]
 python = "3.11.*"
