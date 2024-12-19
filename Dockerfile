@@ -2,7 +2,7 @@ FROM ghcr.io/prefix-dev/pixi:latest
 
 WORKDIR /repo
 
-COPY pixi.lock /repo/pixi.lock
+# COPY pixi.lock /repo/pixi.lock
 COPY pixi.toml /repo/pixi.toml
 
 RUN apt-get update && apt-get install -y git
