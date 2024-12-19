@@ -6,7 +6,7 @@ COPY pixi.lock /repo/pixi.lock
 COPY pixi.toml /repo/pixi.toml
 
 RUN apt-get update && apt-get install -y git
-RUN /usr/local/bin/pixi install --manifest-path pixi.toml
+RUN /usr/local/bin/pixi install --manifest-path pixi.toml --environment cuda
 
 # create a shell-hook so commands passed tot he container are run in the env
 RUN pixi shell-hook -s bash > /shell-hook
