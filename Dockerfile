@@ -3,10 +3,10 @@ FROM ghcr.io/prefix-dev/pixi:latest
 WORKDIR /repo
 
 # COPY pixi.lock /repo/pixi.lock
-COPY pixi.toml /repo/pixi.toml
+COPY pyproject.toml /repo/pyproject.toml
 
 RUN apt-get update && apt-get install -y git
-RUN /usr/local/bin/pixi install --manifest-path pixi.toml --environment cuda
+RUN /usr/local/bin/pixi install --manifest-path pyproject.toml --environment cuda
 
 # create a shell-hook so commands passed tot he container are run in the env
 RUN pixi shell-hook -s bash > /shell-hook
